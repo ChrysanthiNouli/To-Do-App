@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: #531271;
+}
+
+.h1 {
+    font-family: Tahoma;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 2.5em;
+}
+
+.addBtn {
+    background-color: #531271;
+    color: #fff;
+    font-family: Tahoma;
+    font-size: 1.2em;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 8px 9px 8px 9px;
+    margin: 0.25em;
+    justify-self: start;
+}
+
+.editBtn {
+    background-color: #ad62ba;
+    color: #fff;
+    font-family: Tahoma;
+    font-size: 1.2em;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 8px 9px 8px 9px;
+    margin: 0.25em;
+}
+
+.deleteBtn {
+    background-color: #ad62ba;
+    color: #fff;
+    font-family: Tahoma;
+    font-size: 1.2em;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 8px 9px 8px 9px;
+    margin: 0.25em;
+}
+
+input[type=text] {
+    font-family: Tahoma;
+    font-size: 1.2em;
+    padding: 8px 9px 8px 9px;
+    margin: 0.25em;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    box-shadow: 0 0 6px #fff;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #531271;
+}
+
+.incomplete {
+    text-decoration: none;
+    color: #fff;
+}
+
+span {
+    font-family: Tahoma;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 8px 8px 8px 8px;
+    margin: 0.25em;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    font: Tahoma;
+    color: #fff;
+    width: 1.2em;
+    height: 1.2em;
+    border: 0.1em solid transparent;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    padding: 8px 8px 8px 8px;
+    margin: 0.25em;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.7em;
+    height: 0.7em;
+    transform: scale(0);
+    background-color: #531271;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.cardDiv:empty {
+    background-color: #531271;
+}
+
+.cardDiv {
+    background-color: #ad62ba;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    position: relative;
+}
+
+.addDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.toDoItemDiv {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
